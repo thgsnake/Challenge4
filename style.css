@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    max-width: 1440px;
+    margin: 0;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(227, 67%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+}
+
+.container{
+    width: 360px;
+    height: 560px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.container header img{
+    width: 360px;
+    height: 180px;
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px ;
+}
+
+.container .text{text-align: center;}
+
+.container .text h1{
+    padding-top: 20px;
+    font-size: 1.5625rem;
+    font-weight: 900;    
+}
+
+.container .text p{
+    color:hsl(224, 23%, 55%);
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 280px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+}
+.plan img{width: 85%;}
+
+.plan .img-music{
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.plan .left{
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+/*CHANGE*/
+.right a{
+    color: rgba(0, 0, 255, 0.648);
+    font-size: 0.8125rem;
+    font-weight: 900;
+}
+
+.buttons{   
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;    
+}
+
+.button1{
+    margin-top: 20px;
+    display: inline-block;    
+    text-align: center;
+    background-color: blue;
+    padding: 10px 80px;
+    border-radius: 10px;
+}
+
+.button1 a{
+    font-size: 0.8125rem;
+    color: #fff;
+    text-decoration: none;
+}
+.button1:hover{
+    background-color: hsla(231, 93%, 57%, 0.781);
+}
+
+.button2{
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.button2 a{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    font-weight: 900;
+}
+
+.right a:hover{text-decoration: none;}
+
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.6875rem; 
+    text-align: center; 
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 425px){
+    .container{
+        width: 340px;
+    }
+    .container header img{
+        width: 340px;
+    }
+}
